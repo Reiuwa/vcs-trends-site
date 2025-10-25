@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html>
+    <body>
+       <h1>The Evolution of Version Control</h1>
+       <p>The history of version control systems (VCS) tracks an evolution from tools managing single files to networked systems enabling global collaboration. This progression introduced key tools, each building on the last:</p>
+        <ul>
+            <li><b>1972: SCCS:</b> (Source Code Control System): Developed at Bell Labs, it was one of the first VCS tools and introduced the basic concept of tracking changes, initially on IBM mainframes.</li>
+            <li><b>1982: RCS:</b> The Revision Control System was a local VCS that automated change tracking for individual files using delta storage (storing differences) but lacked network support.</li>
+            <li><b>1986: CVS:</b> The Concurrent Versions System emerged as a front-end to RCS, adding a client-server model that allowed multiple developers to collaborate on entire projects. It became widely used but lacked critical features like atomic commits.</li>
+            <li><b>2000: Subversion (SVN):</b> Created as a successor to CVS, SVN introduced atomic commits (all-or-nothing changesets) and better handling of file renames. It was a robust centralized VCS that became very popular in the mid-2000s.</li>
+            <li><b>2005: Git and Mercurial:</b> This year marked a breakthrough with the release of two major distributed version control systems (DVCS). Git was created by Linus Torvalds for Linux kernel development , and it quickly became the dominant VCS in the industry.</li>
+            <li><b>2008: GitHub Launched:</b> GitHub provided a web-based collaboration platform on top of Git, making code sharing easier with features like pull requests, issue tracking, and social networking. This greatly accelerated Git's adoption.</li>
+            <li><b>2010s: Wide Git Adoption:</b> Many projects and companies migrated from older systems (CVS, SVN, Perforce) to Git. Distributed version control became the new standard.</li>
+            <li><b>Late 2010s: GitOps and Modern Practices:</b> In 2017, the term "GitOps" was coined, using Git repositories as the single source of truth for infrastructure and deployments. Integration with CI/CD pipelines became mainstream.</li>
+            <li><b>2020s: AI and Large-Scale Collaboration:</b> Cloud platforms reached massive scale (GitHub reported over 100 million developers in 2023). AI tools like GitHub Copilot began assisting with code management and review. VCS remains central to modern DevOps and GitOps workflows.</li>
+        </ul>
+        <h1>The Distributed Revolution</h2>
+        <p>
+            The shift from centralized (CVCS) to distributed (DVCS) models "changed the game" for software development.
+        </p>
+        <p1>
+            In centralized systems like CVS and SVN, a single server holds the official repository. Developers commit changes to this central server, which requires network access and creates a single point of failure. Merging was often challenging, so teams tended to avoid creating many branches.
+        </p1><br><br>
+        <p2>
+            Distributed systems like Git fundamentally changed this. In a DVCS, every developer has their own full copy of the repository, including its entire history. This allows developers to commit changes locally (even offline) and provides greater resilience. Most importantly, branching is extremely fast and merging is a "first-class operation". This key difference enabled prolific branching, parallel development, and the complex, non-linear workflows that are standard today.
+        </p2>
+
+    </body>
+</html>
